@@ -38,6 +38,7 @@ def convert_for_atari(img, srclayer):
             max_luminance = 0
             closest_min_luminance = 0
             closest_max_luminance = 0
+            # Determine the min and max luminance
             for x in range(width):
                 r, g, b = layer.get_pixel(x, y)
                 luminance = (0.21 * r) + (0.72 * g) + (0.07 * b)
